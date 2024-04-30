@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laura Larrotta</title>
+    <!-- LINKS STYLES -->
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!--ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--LETRA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>Proyecto M1</h1>
+    <!-- MENÚ ENCABEZADO -->
+    <div class="contenedor-header">
+        <header class="encabezado">
+            <nav class="nav" id="nav">
+                <ul class="navbar">
+                    <li class="elemetos__nav"><a class="enlace" href="#inicio">Inicio</a></li>
+                    <li class="elemetos__nav"><a class="enlace" href="#sobremi">Sobre mi</a></li>
+                    <li class="elemetos__nav"><a class="enlace" href="#tecnologias_favoritas">tecnologias favoritas</a>
+                    </li>
+                    <li class="elemetos__nav"><a class="enlace" href="#formulario">Mis Actividades Favoritas</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="assets/1.png" alt="">
+            </div>
+
+            <h1>Laura Larrotta</h1>
+
+            <h3 class="profesion">Administradora de empresas</h3>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=61558093243419&mibextid=JRoKGi"><i
+                        class=" fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lhdevstools?igsh=MWxpOG44Z2g3aHc1cg=="><i
+                        class="fa-brands fa-square-instagram" "></i></a>
+                <a href=" https://www.tiktok.com/@lollygamerx?_t=8ldYwUSc3NN&_r=1"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/laura-larrotta-lh/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/lauralarrotta"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/lauralarrotta"><i class="fa-brands fa-html5"></i></a>
+                <a href="#"><i class="fa-brands fa-js"></i>
+                    <a href="#"> <i class="fa-brands fa-css3-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MI -->
+
+    <section id="sobremi" class="sobre_mi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, Soy Laura Larrotta</span> profesional multifacética con una sólida experiencia en
+                administración de empresas, recursos humanos,
+                contabilidad y diseño web. Mi trayectoria laboral abarca desde la gestión eficiente de contratos y
+                nóminas hasta la
+                creación de sitios web atractivos y efectivos, combinando habilidades analíticas y creativas para
+                alcanzar resultados
+                excepcionales.</p>
+
+            <p> Apasionada por el aprendizaje continuo, actualmente estoy inmersa en el mundo de la programación,
+                explorando nuevas
+                oportunidades para fusionar mis habilidades en diferentes áreas y crear soluciones innovadoras. Mi
+                objetivo es seguir
+                creciendo profesionalmente y contribuir al éxito de proyectos que desafíen mis capacidades y me permitan
+                marcar una
+                diferencia positiva en el campo digital.</p>
+    </section>
+
+    <!-- SECCIÓN TECNOLOGÍAS FAVORITAS -->
+
+    <section id="tecnologias_favoritas" class="tecnologias_favoritas">
+        <div class="fila">
+            <div class="col">
+                <h3>Mis Tecnologías Favoritas</h3>
+                <div class="flexbox">
+                    <div class="myCard">
+                        <div class="innerCard">
+                            <div class="frontSide">
+                                <i class="fa-brands fa-html5 tarjeta-zoom"></i>
+                            </div>
+                            <div class="backSide">
+                                <p class="title">HTML</p>
+                            </div>
+                        </div>
+                    </div> <!--.card html-->
+                    <div class="myCard">
+                        <div class="innerCard">
+                            <div class="frontSide">
+                                <i class="fa-brands fa-js tarjeta-zoom"></i></i>
+                            </div>
+                            <div class="backSide">
+                                <p class="title">JAVASCRIPT</p>
+                            </div>
+                        </div>
+                    </div> <!--.card html-->
+                    <div class="myCard">
+                        <div class="innerCard">
+                            <div class="frontSide">
+                                <i class="fa-brands fa-css3-alt tarjeta-zoom"></i>
+                            </div>
+                            <div class="backSide">
+                                <p class="title">CSS</p>
+                            </div>
+                        </div>
+                    </div> <!--.card html-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN FORMULARIO -->
+    <section class="formulario" id="formulario">
+        <h2>MIS ACTIVIDADES FAVORITAS</h2>
+        <div class="input-container">
+            <input type="text" placeholder="titulo">
+        </div>
+        <div class="input-container">
+            <textarea type="text" placeholder="descripción"></textarea>
+        </div>
+        <div class="input-container">
+            <input type="url" placeholder="URL de la imagen">
+        </div>
+        <div class="input-container">
+            <button class="button">Enviar</button>
+        </div>
+        <div id="actividades-container"></div>
+    </section>
 </body>
+
+<!-- PIE DE PAGINA -->
+<footer class="pie">
+    <p>Derechos de autor © 2024 Laura larrotta. </p>
+    <p>Todos los derechos reservados.</p>
+</footer>
+
 </html>
