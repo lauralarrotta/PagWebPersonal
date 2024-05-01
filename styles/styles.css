@@ -308,7 +308,8 @@ h2 {
     border-radius: 4rem;
     background: linear-gradient(135deg, #23272F 0%, #14161a 100%);
     box-shadow: 10px 10px 20px #0e1013, -10px -10px 40px #383e4b;
-    padding: 0.3rem;
+    padding: 1.3rem;
+
 
 }
 
@@ -323,6 +324,7 @@ input {
     border: 1px solid transparent;
     color: white;
     transition: all 0.2s ease-in-out;
+    text-align: center;
 }
 
 .input-container textarea:focus {
