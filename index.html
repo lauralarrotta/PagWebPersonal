@@ -132,18 +132,19 @@
     <section class="formulario" id="formulario">
         <h2>MIS ACTIVIDADES FAVORITAS</h2>
         <div class="input-container">
-            <input type="text" placeholder="titulo">
+            <input id="title" type="text" placeholder="titulo">
         </div>
         <div class="input-container">
-            <textarea type="text" placeholder="descripción"></textarea>
+            <textarea id="descripcion" type="text" placeholder="descripción"></textarea>
         </div>
         <div class="input-container">
-            <input type="url" placeholder="URL de la imagen">
+            <input id="imgUrl" type="url" placeholder="URL de la imagen">
         </div>
         <div class="input-container">
-            <button class="button">Enviar</button>
+            <button id="button" class="button">Enviar</button>
         </div>
-        <div id="actividades-container"></div>
+        <div id="actividades-container">
+        </div>
     </section>
 
     <!-- PIE DE PAGINA -->
@@ -155,7 +156,7 @@
 
     <!-- IMPLEMENTACIÓN DE JAVASCRIPT -->
 
-    <script src="./scripts/index.js"></script>
+    <script src="/scripts/index.js"></script>
 
 
 </body>
