@@ -374,4 +374,9 @@ input {
     padding: 1rem;
 }
 
-/* Alerta */
+/* Imagen Javascript*/
+
+.actividad-imagen {
+    max-width: 100%;
+    height: auto;
+}

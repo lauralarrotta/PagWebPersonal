@@ -17,9 +17,9 @@ class Repository {
     );
     this.nextId = 1; // Inicializar el ID para las actividades
 
-    // Agregar evento click al botón
-    const btn = document.getElementById("button");
-    btn.addEventListener("click", this.agregarTarjeta.bind(this));
+    // Agregar evento click al botón "Enviar"
+    const buttonEnviar = document.getElementById("button");
+    buttonEnviar.addEventListener("click", this.agregarTarjeta.bind(this));
   }
 
   // Función para validar una URL
@@ -36,12 +36,7 @@ class Repository {
       imgUrl
     );
     this.actividades.push(nuevaActividad);
-    return nuevaActividad; // se decuelve  la nueva actividad añadida
-  }
-
-  createActivity(title, description, imgUrl) {
-    //  utiliza this.nextId para generar el nuevo ID
-    return this.addActivity(title, description, imgUrl);
+    return nuevaActividad; // se devuelve la nueva actividad añadida
   }
 
   actualizarContenedor() {
@@ -52,22 +47,25 @@ class Repository {
       const nuevoDiv = document.createElement("div");
       nuevoDiv.classList.add("myCard");
 
+      // Agregar console.log para verificar la URL de la imagen
+      console.log(actividad.imgUrl);
+
       nuevoDiv.innerHTML = `
-        <div class="innerCard">
-          <div class="frontSide">
-            <div class="description">
-              <div>
-                <img src="${actividad.imgUrl}" alt="${actividad.title}">
-              </div>
-            </div>
-          </div>
-          <div class="backSide">
-            <h3>${actividad.title}</h3>
-            <p>${actividad.description}</p>
-            <button class="eliminar" data-index="${index}">x</button> <!-- Botón de eliminar con atributo data-index -->
-          </div>
+  <div class="innerCard">
+    <div class="frontSide">
+      <div class="description">
+        <div>
+          <img src="${actividad.imgUrl}" alt="${actividad.title}" class="actividad-imagen">
         </div>
-      `;
+      </div>
+    </div>
+    <div class="backSide">
+      <h2>${actividad.title}</h2>
+      <p>${actividad.description}</p>
+      <button class="eliminar" data-index="${index}">x</button> <!-- Botón de eliminar con atributo data-index -->
+    </div>
+  </div>
+`;
 
       this.actividadesContainer.appendChild(nuevoDiv);
     });
@@ -105,6 +103,11 @@ class Repository {
 
     // Actualizar el contenido del contenedor de actividades
     this.actualizarContenedor();
+
+    // Limpiar los campos del formulario después de agregar la actividad
+    document.getElementById("title").value = "";
+    document.getElementById("descripcion").value = "";
+    document.getElementById("imgUrl").value = "";
   }
 }
 
