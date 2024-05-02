@@ -139,7 +139,7 @@
 .tecnologias_favoritas {
     background-color: var(--negro);
     color: var(--blanco);
-    padding: 5% 5%;
+    padding: 4% 5%;
 }
 
 .sobre_mi.contenido-seccion {
@@ -176,12 +176,13 @@
 }
 
 h3,
-h2 {
+h2,
+.mensaje-no-imagenes {
     color: var(--blanco);
     font-size: 48px;
     font-family: var(--Fuentemenú);
     text-align: center;
-    padding: 5% 0;
+    padding: 3% 0;
 }
 
 .tarjeta-zoom {
@@ -364,6 +365,18 @@ input {
     box-shadow: 0px 0px 100px rgb(255, 59, 213, 0.5), 0px 0px 100px rgb(0, 174, 255, 0.5);
 }
 
+#actividades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10rem;
+}
+
+.myCard {
+    flex-basis: calc(33.33% - 90px);
+    margin-bottom: 20px;
+}
+
 /* footer */
 
 .pie {
@@ -379,4 +392,9 @@ input {
 .actividad-imagen {
     max-width: 100%;
     height: auto;
+}
+
+
+.mensaje-no-imagenes {
+    display: none;
 }

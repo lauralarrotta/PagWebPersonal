@@ -20,6 +20,8 @@ class Repository {
     // Agregar evento click al botón "Enviar"
     const buttonEnviar = document.getElementById("button");
     buttonEnviar.addEventListener("click", this.agregarTarjeta.bind(this));
+    // mensaje no hay imagenes
+    this.mensajeNoImagenes = document.getElementById("mensajeNoImagenes");
   }
 
   // Función para validar una URL
@@ -113,3 +115,10 @@ class Repository {
 
 // Crear una instancia de la clase Repository después de su definición
 const repo = new Repository();
+
+// Crear Jasmine
+
+module.exports = {
+  Activity,
+  Repository,
+};
